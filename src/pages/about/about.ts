@@ -7,8 +7,44 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+  items = [
+    {
+      name: "uniersity golf club",
+      about: "club at ubc",
+      regularPrice : 55,
+      memberPrice : 45,
+      savePercentage : 10,
+      date: "2018年12月2日 星期日",
+    },
+    {
+      name: "uniersity golf club",
+      about: "club at ubc",
+      regularPrice : 55,
+      memberPrice : 45,
+      savePercentage : 10,
+      date: "2018年12月2日 星期日",
+    },
+    {
+      name: "uniersity golf club",
+      about: "club at ubc",
+      regularPrice : 55,
+      memberPrice : 45,
+      savePercentage : 10,
+      date: "2018年12月2日 星期日",
+    },
+    {
+      name: "uniersity golf club",
+      about: "club at ubc",
+      regularPrice : 55,
+      memberPrice : 45,
+      savePercentage : 10,
+      date: "2018年12月2日 星期日",
+    }
+
+  ]
   constructor(public navCtrl: NavController) {
 
   }
 
 }
+
