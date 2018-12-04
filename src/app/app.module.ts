@@ -7,9 +7,11 @@ import { AboutPage } from '../pages/about/about';
 import { MePage } from '../pages/me/me';
 import { PrebookteePage } from '../pages/prebooktee/prebooktee';
 import { TabsPage } from '../pages/tabs/tabs';
+import {PrebookteedetailPage} from "../pages/prebookteedetail/prebookteedetail";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MePage,
     PrebookteePage,
+    PrebookteedetailPage,
     TabsPage
   ],
   imports: [
@@ -29,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     MePage,
     PrebookteePage,
+    PrebookteedetailPage,
     TabsPage
   ],
   providers: [
