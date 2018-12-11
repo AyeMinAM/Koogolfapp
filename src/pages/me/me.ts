@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {AccountProvider} from "../../providers/account/account";
 
 /**
  * Generated class for the MePage page.
@@ -14,11 +15,15 @@ import { NavController } from 'ionic-angular';
 })
 export class MePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public accountProvider: AccountProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MePage');
+  }
+
+  testLogin(){
+    this.accountProvider.fakeLogin()
   }
 
 }
