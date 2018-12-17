@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { PrebookteedetailPage} from "../prebookteedetail/prebookteedetail";
+import { PrebookteedetailPage} from "./prebookteedetail/prebookteedetail";
 
 @Component({
   selector: 'page-prebooktee',

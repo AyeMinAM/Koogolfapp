@@ -5,24 +5,25 @@ import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
-import { AboutPage } from '../pages/about/about';
 import { MePage } from '../pages/me/me';
 import { PrebookteePage } from '../pages/prebooktee/prebooktee';
 import { TabsPage } from '../pages/tabs/tabs';
-import {PrebookteedetailPage} from "../pages/prebookteedetail/prebookteedetail";
+// import {PrebookteedetailPage} from "../pages/prebooktee/prebookteedetail/prebookteedetail";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AccountProvider } from '../providers/account/account';
+import {HomePage} from "../pages/home/home";
+import {CalenderPage} from "../pages/calender/calender";
 
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     MePage,
     PrebookteePage,
-    PrebookteedetailPage,
+    HomePage,
+    // PrebookteedetailPage,
     TabsPage
   ],
   imports: [
@@ -33,10 +34,11 @@ import { AccountProvider } from '../providers/account/account';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    HomePage,
     MePage,
     PrebookteePage,
-    PrebookteedetailPage,
+    CalenderPage,
+    // PrebookteedetailPage,
     TabsPage
   ],
   providers: [
