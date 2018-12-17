@@ -9,7 +9,6 @@ import { PrebookteePage } from './prebooktee.page';
 
 const routes: Routes = [
     { path: '', component: PrebookteePage },
-    { path: '', component: PrebookteePage },
 ];
 
 @NgModule({

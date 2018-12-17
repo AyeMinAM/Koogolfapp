@@ -9,11 +9,6 @@ const routes: Routes = [
         component: TabsPage,
         children: [
             {
-                path: '',
-                redirectTo: '/tabs/home',
-                pathMatch: 'full',
-            },
-            {
                 path: 'home',
                 children: [
                     {
@@ -48,7 +43,13 @@ const routes: Routes = [
                         loadChildren: '../me/me/me.module#MePageModule'
                     }
                 ]
+            },
+            {
+                path: '',
+                redirectTo: '/tabs/home',
+                pathMatch: 'full'
             }
+
         ]
     },
     {
