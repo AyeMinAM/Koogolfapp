@@ -4,12 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 import {HomePage} from "../home/home/home.page";
 import {CalenderPage} from "../calender/calender/calender.page";
-import {PrebookteeListPage} from "../prebooktee/prebooktee-list/prebooktee-list.page";
 import {MePage} from "../me/me/me.page";
-
-// import { Tab1Page } from '../tab1/tab1.page';
-// import { Tab2Page } from '../tab2/tab2.page';
-// import { Tab3Page } from '../tab3/tab3.page';
+import {PrebookteePage} from "../prebooktee/prebooktee/prebooktee.page";
 
 const routes: Routes = [
     {
@@ -27,9 +23,9 @@ const routes: Routes = [
                 component: HomePage
             },
             {
-                path: 'prebookteelist',
+                path: 'prebooktee',
                 outlet: 'prebooktee',
-                component: PrebookteeListPage
+                component: PrebookteePage
             },
             {
                 path: 'calender',

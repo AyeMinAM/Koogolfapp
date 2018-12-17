@@ -10,8 +10,8 @@ import { TabsPage } from './tabs.page';
 
 import {HomePageModule} from "../home/home/home.module";
 import {CalenderPageModule} from "../calender/calender/calender.module";
-import {PrebookteeListPageModule} from "../prebooktee/prebooktee-list/prebooktee-list.module";
 import {MePageModule} from "../me/me/me.module";
+import {PrebookteePageModule} from "../prebooktee/prebooktee/prebooktee.module";
 
 @NgModule({
   imports: [
@@ -20,7 +20,7 @@ import {MePageModule} from "../me/me/me.module";
     FormsModule,
     TabsPageRoutingModule,
     HomePageModule,
-    PrebookteeListPageModule,
+    PrebookteePageModule,
     CalenderPageModule,
     MePageModule
   ],

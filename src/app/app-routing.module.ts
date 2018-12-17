@@ -5,8 +5,8 @@ const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'home', loadChildren: './home/home/home.module#HomePageModule' },
   { path: 'me', loadChildren: './me/me/me.module#MePageModule' },
-  { path: 'PrebookteeList', loadChildren: './prebooktee/prebooktee-list/prebooktee-list.module#PrebookteeListPageModule' },
-  { path: 'calender', loadChildren: './calender/calender/calender.module#CalenderPageModule' },
+  { path: 'calender', loadChildren: './calender/calender/calender.module#CalenderPageModule' },  { path: 'prebooktee', loadChildren: './prebooktee/prebooktee/prebooktee.module#PrebookteePageModule' },
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

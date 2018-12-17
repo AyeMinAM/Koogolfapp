@@ -1,24 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>天天会员日</ion-title>
+    <ion-title>prebooktee</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-grid>
-    <div *ngFor="let item of items" (click)="itemTapped(item)">
-      <ion-row class="kt-text-black kt-padding-left-10 border-bottom"> {{item.date}}</ion-row>
+    <div *ngFor="let tee of teetimes" (click)="teeClicked(tee)">
+      <ion-row class="kt-text-black kt-padding-left-10 border-bottom"> {{tee.date}}</ion-row>
       <ion-row class="border-bottom">
         <ion-col col-4>
-          <img class="height-90" src="../../assets/imgs/golf-course-test.jpg">
+          <img class="height-90" [src]="tee.imgUrl">
         </ion-col>
         <ion-col col-8>
           <ul>
             <li>
-              {{item.name}}
+              {{tee.name}}
             </li>
             <li>
-              {{item.about}}
+              {{tee.about}}
             </li>
             <li class="dis-in-block">会员<span class="kt-text-orange kt-text-heavy">$40</span></li>
             <li class="dis-in-block">正常价格<span class="kt-text-orange kt-text-heavy">$44</span></li>
