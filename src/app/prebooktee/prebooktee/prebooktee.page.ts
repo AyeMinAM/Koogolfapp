@@ -54,5 +54,6 @@ export class PrebookteePage implements OnInit {
 
   teeClicked(tee){
     console.log(tee);
+    this.router.navigate(['detail',tee.name])
   }
 }
