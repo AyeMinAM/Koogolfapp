@@ -10,12 +10,14 @@ import { PrebookTeeDetailComponent } from './detail/prebook-tee-detail.component
 
 const routes: Routes = [
     {
-        path: '',
-        component: PrebookteePage
-    },
-    {
-        path: 'detail/:id',
-        component: PrebookTeeDetailComponent
+        path: 'prebooktee',
+        children:[
+            {
+                path: 'detail/:id',
+                component: PrebookTeeDetailComponent
+            }
+        ]
+
     }
 ];
 

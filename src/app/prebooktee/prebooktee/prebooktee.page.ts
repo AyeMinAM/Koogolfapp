@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-prebooktee',
@@ -47,13 +48,13 @@ export class PrebookteePage implements OnInit {
         }
     ]
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private navCtrl: NavController ) { }
 
   ngOnInit() {
   }
 
   teeClicked(tee){
-    console.log(tee);
-    this.router.navigate(['detail',tee.name])
+    this.navCtrl.navigateForward('/prebooktee/detail/' + tee.name)
+
   }
 }
