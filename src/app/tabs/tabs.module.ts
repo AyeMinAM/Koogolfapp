@@ -19,10 +19,6 @@ import {PrebookteePageModule} from "../prebooktee/prebooktee/prebooktee.module";
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    HomePageModule,
-    PrebookteePageModule,
-    CalenderPageModule,
-    MePageModule
   ],
   declarations: [TabsPage]
 })

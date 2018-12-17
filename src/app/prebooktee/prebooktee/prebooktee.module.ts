@@ -6,19 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PrebookteePage } from './prebooktee.page';
-import { PrebookTeeDetailComponent } from './detail/prebook-tee-detail.component';
 
 const routes: Routes = [
-    {
-        path: 'prebooktee',
-        children:[
-            {
-                path: 'detail/:id',
-                component: PrebookTeeDetailComponent
-            }
-        ]
-
-    }
+    { path: '', component: PrebookteePage },
+    { path: '', component: PrebookteePage },
 ];
 
 @NgModule({
@@ -28,6 +19,6 @@ const routes: Routes = [
         IonicModule,
         RouterModule.forChild(routes)
     ],
-    declarations: [PrebookteePage, PrebookTeeDetailComponent]
+    declarations: [PrebookteePage]
 })
 export class PrebookteePageModule {}

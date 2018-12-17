@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
-import {HomePage} from "../home/home/home.page";
-import {CalenderPage} from "../calender/calender/calender.page";
-import {MePage} from "../me/me/me.page";
-import {PrebookteePage} from "../prebooktee/prebooktee/prebooktee.page";
 
 const routes: Routes = [
     {
@@ -14,34 +10,50 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: '/tabs/(home:home)',
+                redirectTo: '/tabs/home',
                 pathMatch: 'full',
             },
             {
                 path: 'home',
-                outlet: 'home',
-                component: HomePage
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../home/home/home.module#HomePageModule'
+                    }
+                ]
             },
             {
                 path: 'prebooktee',
-                outlet: 'prebooktee',
-                component: PrebookteePage
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../prebooktee/prebooktee/prebooktee.module#PrebookteePageModule'
+                    }
+                ]
             },
             {
                 path: 'calender',
-                outlet: 'calender',
-                component: CalenderPage
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../calender/calender/calender.module#CalenderPageModule'
+                    }
+                ]
             },
             {
                 path: 'me',
-                outlet: 'me',
-                component: MePage
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../me/me/me.module#MePageModule'
+                    }
+                ]
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/tabs/(home:home)',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
     }
 ];
