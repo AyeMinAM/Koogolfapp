@@ -54,7 +54,7 @@ export class PrebookteePage implements OnInit {
   }
 
   teeClicked(tee){
-    this.navCtrl.navigateForward('/prebooktee/detail/' + tee.name)
+    this.navCtrl.navigateForward('tabs/prebooktee/detail/' + tee.name)
 
   }
 }
