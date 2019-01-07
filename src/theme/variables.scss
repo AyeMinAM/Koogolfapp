@@ -74,4 +74,54 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /**kootour themem**/
+  --ion-backdrop-color:red;
+  --ion-overlay-background-color:pink;
+  --ion-border-color:red;
+  --ion-box-shadow-color:red;
+  --ion-tab-bar-background:#E9ECEF;
+  --ion-tab-bar-background-focused:red;
+  --ion-tab-bar-color:#333333;
+  --ion-tab-bar-color-activated:#a37e2c;
+  --ion-toolbar-background:#333333;
+  --ion-toolbar-color:#ffffff;
+  --ion-toolbar-color-activated:green;
+  --ion-toolbar-color-unchecked:red;
+  --ion-toolbar-color-checked:red;
+  --ion-item-background:yellow;
+  --ion-item-background-activated:pink;
+  --ion-item-border-color:blue;
+  --ion-item-color:red;
+  --ion-placeholder-color:purple;
+  --ion-font-family:"Microsoft YaHei", serif;
+}
+
+ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+.kt-text-orange{
+  color:#E65100;
+}
+
+.kt-text-heavy{
+  font-weight:800;
+}
+
+.bg-green{
+  line-height: 1;
+  list-style: none;
+  background: #8bc34a;
+  padding: 3px;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  clear: both;
+}
+
+.dis-in-block {
+  display: inline-block;
 }
