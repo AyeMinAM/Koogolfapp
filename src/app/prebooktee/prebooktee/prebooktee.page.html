@@ -4,12 +4,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
     <div *ngFor="let tee of teetimes" (click)="teeClicked(tee)">
-      <ion-row class="kt-text-black kt-padding-left-10 border-bottom"> {{tee.date}}</ion-row>
+      <ion-row class="kt-text-black kt-padding-left-10 border-bottom" style="background-color:#a37e2c; color: #ffffff;"> {{tee.date}}</ion-row>
       <ion-row class="border-bottom">
-        <ion-col col-4>
+        <ion-col col-4 nopadding>
           <img class="height-90" src="../../../assets/img/golf-course.jpg">
         </ion-col>
         <ion-col col-8>
